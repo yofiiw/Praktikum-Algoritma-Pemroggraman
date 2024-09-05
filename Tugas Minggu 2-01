@@ -1,0 +1,13 @@
+panjang = 20.5 #bilangan desimal menggunakan tanda titik . bukan koma
+lebar = 25
+tinggi = 10
+
+keliling = 2*(panjang+lebar)
+luas = panjang*lebar #untuk luas rumusnya adalah panjang*lebar maka hilangkan tanda / (pembagi)
+volume = panjang*lebar*tinggi #untuk volum ubah menjadi volume, tiggi menjadi tinggi
+
+print("Panjang = " + str(panjang)) #tambahkan tanda + dan str untuk type data panjang, serta ubah tanda petik tunggal menjadi tanda kurung
+print("Lebar = " + str(lebar)) #hilangkan huruf l pada command printl, kemudian pada type Lebar samakan tanda petiknya (ganda), serta berikan str untuk type data lebar serta dikasih tanda kurung
+print("Tinggi = " + str(tinggi)) #ganti tanda petik tunggal ke ganda, tambahkan tanda + dan str untuk type data tinggi, jangan lupa dikurungin
+print("Keliling = " + str(keliling)) #hilangkan huruf l pada command printl, tambahkan tanda + dan str untuk type data kelling ganti menjadi  --> keliling, serta ubah tanda petik tunggal menjadi tanda kurung
+print("Volume = " + str(volume)) #tambahkan str untuk type data volume dan berikan tanda kurung
