@@ -1,0 +1,29 @@
+#Weekly Exercise 3
+masa_kerja = 10
+hari_kerja = 8
+gaji_per_jam = 30000
+
+#Soal 1. Gaji pada bulan Agustus jika Dwi tidak masuk kerja selama 3 hari, berapa gaji yang diterima oleh Dwi.
+bulan_agustus = 31
+tidak_masuk_kerja = 3
+
+gaji_bulan_agustus = (hari_kerja*gaji_per_jam) * (bulan_agustus - tidak_masuk_kerja)
+print("1. Gaji bulan Agustus Dwi adalah Rp.", gaji_bulan_agustus)
+
+#Soal 2. Apabila terdapat tunjangan bagi karyawan yang bekerja lebih dari 5 tahun sebesar 10% dari total gaji yang diterima setiap bulan, tentukan jumlah tunjangan yang diterima oleh Dwi pada bulan Agustus.
+persentase_tunjangan = 0.1
+
+if masa_kerja > 5 :
+  tunjangan = gaji_bulan_agustus * persentase_tunjangan
+else :
+  tunjangan = 0
+
+print("2. Tunjangan yang diterima Dwi adalah Rp.", tunjangan)
+
+#Soal 3. Apabila pada bulan Agustus Dwi mendapatkan tugas lembur selama 5 jam, tentukan gaji total yang diterima oleh Dwi pada bulan Agustus. (upah lembur : Rp 10.000,- per jam)
+jam_lembur = 5
+upah_lembur_perjam = 10000
+
+gaji_lembur = jam_lembur * upah_lembur_perjam
+total_gaji_bulan_agustus = gaji_bulan_agustus + tunjangan + gaji_lembur
+print("3. Total gaji bulan Agustus Dwi adalah Rp.", total_gaji_bulan_agustus)
