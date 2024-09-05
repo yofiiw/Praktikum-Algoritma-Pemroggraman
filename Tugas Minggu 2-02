@@ -1,0 +1,32 @@
+#Weekly Exercise 2
+data_mahasiswa = {
+    "Shafira": {"Kalkulus 1": 85, "Metode Statistika": 75},
+    "Amanda": {"Kalkulus 1": 80, "Metode Statistika": 90},
+    "Aditya": {"Kalkulus 1": 75, "Metode Statistika": 80},
+    "Nedia": {"Kalkulus 1": 95, "Metode Statistika": 80},
+    "Widya": {"Kalkulus 1": 85, "Metode Statistika": 85},
+    "Hanif": {"Kalkulus 1": 75, "Metode Statistika": 90},
+    "Andi": {"Kalkulus 1": 70, "Metode Statistika": 75},
+    "Dhanar": {"Kalkulus 1": 85, "Metode Statistika": 85},
+    "Hikma": {"Kalkulus 1": 80, "Metode Statistika": 75},
+}
+#Soal 1. Rata-rata nilai Shafira pada kedua mata kuliah
+rata_rata_shafira = (data_mahasiswa["Shafira"]["Kalkulus 1"] + data_mahasiswa["Shafira"]["Metode Statistika"]) / 2
+print("1. Rata-rata nilai Shafira pada kedua mata kuliah adalah :", rata_rata_shafira)
+
+#Soal 2. Jumlah nilai Hanif dan Andi untuk semua mata kuliah
+jumlah_nilai_hanif_andi = data_mahasiswa["Hanif"]["Kalkulus 1"] + data_mahasiswa["Hanif"]["Metode Statistika"] + data_mahasiswa["Andi"]["Kalkulus 1"] + data_mahasiswa["Andi"]["Metode Statistika"]
+print("2. Jumlah nilai Hanif dan Andi untuk semua mata kuliah adalah :", jumlah_nilai_hanif_andi)
+
+#Soal 3. Rata-rata nilai Widya, Dhanar, Hikma dan Nedia pada masing-masing mata kuliah
+rata_rata_kalkulus1_widya_dhanar_hikma_nedia = (data_mahasiswa["Widya"]["Kalkulus 1"] + data_mahasiswa["Dhanar"]["Kalkulus 1"] + data_mahasiswa["Hikma"]["Kalkulus 1"] + data_mahasiswa["Nedia"]["Kalkulus 1"])/ 4
+rata_rata_metodestatistika_widya_dhanar_hikma_nedia = (data_mahasiswa["Widya"]["Metode Statistika"] + data_mahasiswa["Dhanar"]["Metode Statistika"] + data_mahasiswa["Hikma"]["Metode Statistika"] + data_mahasiswa["Nedia"]["Metode Statistika"])/ 4
+print("3. Rata-rata nilai Widya, Dhanar, Hikma dan Nedia pada Kalkulus 1 adalah:", rata_rata_kalkulus1_widya_dhanar_hikma_nedia, "Sedangkan pada Metode Statistikannya : ", rata_rata_metodestatistika_widya_dhanar_hikma_nedia)
+
+#Soal 4. Rata-rata nilai mata kuliah Kalkulus 1 untuk semua mahasiswa
+rata_rata_kalkulus1 = (data_mahasiswa["Shafira"]["Kalkulus 1"] + data_mahasiswa["Amanda"]["Kalkulus 1"] + data_mahasiswa["Aditya"]["Kalkulus 1"] + data_mahasiswa["Nedia"]["Kalkulus 1"] + data_mahasiswa["Widya"]["Kalkulus 1"] + data_mahasiswa["Hanif"]["Kalkulus 1"] + data_mahasiswa["Andi"]["Kalkulus 1"] + data_mahasiswa["Dhanar"]["Kalkulus 1"] + data_mahasiswa["Hikma"]["Kalkulus 1"]) / 9
+print("4. Rata-rata nilai kalkulus 1 untuk semua mahasiswa adalah :", rata_rata_kalkulus1)
+
+#Soal 5. Rata-rata nilai mata kuliah Metode Statistika untuk semua mahasiswa
+rata_rata_metodestatistikas = (data_mahasiswa["Shafira"]["Metode Statistika"] + data_mahasiswa["Amanda"]["Metode Statistika"] + data_mahasiswa["Aditya"]["Metode Statistika"] + data_mahasiswa["Nedia"]["Metode Statistika"] + data_mahasiswa["Widya"]["Metode Statistika"] + data_mahasiswa["Hanif"]["Metode Statistika"] + data_mahasiswa["Andi"]["Metode Statistika"] + data_mahasiswa["Dhanar"]["Metode Statistika"] + data_mahasiswa["Hikma"]["Metode Statistika"]) / 9
+print("5. Rata-rata nilai metode statistika untuk semua mahasiswa adalah :", rata_rata_metodestatistikas)
